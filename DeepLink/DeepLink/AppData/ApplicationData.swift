@@ -11,8 +11,8 @@ final class ApplicationData: ObservableObject {
     
     @Published var selectedTab: TabItem = .home
     
-    @Published var homeStack: [HomeStack] = []
-    @Published var favoritesStack: [FavoritesStack] = []
-    @Published var settingsStack: [SettingsStack] = []
+    @Published var homePath: [HomeItem] = []
+    @Published var favoritesPath: [FavoritesItem] = []
+    @Published var settingsPath: [SettingsItem] = []
     
 }

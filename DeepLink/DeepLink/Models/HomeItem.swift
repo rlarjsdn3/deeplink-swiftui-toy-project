@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HomeStack: String, CaseIterable {
+enum HomeItem: String, CaseIterable {
     case myPosts
     case oldPosts
     case latestPosts
@@ -27,7 +27,7 @@ enum HomeStack: String, CaseIterable {
     }
 }
 
-extension HomeStack {
+extension HomeItem {
     static func convert(from string: String) -> Self? {
         return self.allCases.first { item in
             item.rawValue.lowercased() == string.lowercased()

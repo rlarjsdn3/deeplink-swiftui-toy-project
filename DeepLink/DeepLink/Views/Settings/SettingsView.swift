@@ -14,15 +14,15 @@ struct SettingsView: View {
     
     // MARK: - Body
     var body: some View {
-        NavigationStack(path: $applicationData.settingsStack) {
+        NavigationStack(path: $applicationData.settingsPath) {
             List {
-                ForEach(SettingsStack.allCases, id: \.rawValue) { item in
+                ForEach(SettingsItem.allCases, id: \.rawValue) { item in
                     NavigationLink(value: item) {
                         Text(item.name)
                     }
                 }
             }
-            .navigationDestination(for: SettingsStack.self) { item in
+            .navigationDestination(for: SettingsItem.self) { item in
                 Text(item.name)
             }
             .navigationTitle("Settings")

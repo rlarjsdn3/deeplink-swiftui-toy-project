@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FavoritesStack: String, CaseIterable {
+enum FavoritesItem: String, CaseIterable {
     case iJustine
     case kaviya
     case jenna
@@ -24,7 +24,7 @@ enum FavoritesStack: String, CaseIterable {
     }
 }
 
-extension FavoritesStack {
+extension FavoritesItem {
     static func convert(from string: String) -> Self? {
         return self.allCases.first { item in
             item.rawValue.lowercased() == string.lowercased()

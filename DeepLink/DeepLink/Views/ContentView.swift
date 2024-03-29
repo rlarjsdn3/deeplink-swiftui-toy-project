@@ -34,6 +34,7 @@ struct ContentView: View {
                     Image(systemName: TabItem.settings.systemImage)
                     Text(TabItem.settings.name)
                 }
+                .tag(TabItem.settings)
         }
         .tint(Color.red)
     }

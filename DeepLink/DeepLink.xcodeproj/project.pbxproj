@@ -12,9 +12,9 @@
 		9E20AA382BB5811100654E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E20AA372BB5811100654E2C /* Assets.xcassets */; };
 		9E20AA3B2BB5811100654E2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E20AA3A2BB5811100654E2C /* Preview Assets.xcassets */; };
 		9E20AA442BB5848400654E2C /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA432BB5848400654E2C /* TabItem.swift */; };
-		9E20AA462BB5856800654E2C /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA452BB5856800654E2C /* HomeStack.swift */; };
-		9E20AA482BB5866500654E2C /* FavoritesStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA472BB5866500654E2C /* FavoritesStack.swift */; };
-		9E20AA4A2BB586D000654E2C /* SettingsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA492BB586D000654E2C /* SettingsStack.swift */; };
+		9E20AA462BB5856800654E2C /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA452BB5856800654E2C /* HomeItem.swift */; };
+		9E20AA482BB5866500654E2C /* FavoritesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA472BB5866500654E2C /* FavoritesItem.swift */; };
+		9E20AA4A2BB586D000654E2C /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA492BB586D000654E2C /* SettingsItem.swift */; };
 		9E20AA4D2BB5875A00654E2C /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA4C2BB5875A00654E2C /* ApplicationData.swift */; };
 		9E20AA522BB5884600654E2C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA512BB5884600654E2C /* SettingsView.swift */; };
 		9E20AA542BB5884C00654E2C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AA532BB5884C00654E2C /* FavoritesView.swift */; };
@@ -28,13 +28,14 @@
 		9E20AA372BB5811100654E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E20AA3A2BB5811100654E2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E20AA432BB5848400654E2C /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
-		9E20AA452BB5856800654E2C /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
-		9E20AA472BB5866500654E2C /* FavoritesStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStack.swift; sourceTree = "<group>"; };
-		9E20AA492BB586D000654E2C /* SettingsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStack.swift; sourceTree = "<group>"; };
+		9E20AA452BB5856800654E2C /* HomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		9E20AA472BB5866500654E2C /* FavoritesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesItem.swift; sourceTree = "<group>"; };
+		9E20AA492BB586D000654E2C /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
 		9E20AA4C2BB5875A00654E2C /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 		9E20AA512BB5884600654E2C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9E20AA532BB5884C00654E2C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		9E20AA552BB5885100654E2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9E20AA572BB65F7400654E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		9E20AA322BB5810F00654E2C /* DeepLink */ = {
 			isa = PBXGroup;
 			children = (
+				9E20AA572BB65F7400654E2C /* Info.plist */,
 				9E20AA332BB5810F00654E2C /* DeepLinkApp.swift */,
 				9E20AA4B2BB5874600654E2C /* AppData */,
 				9E20AA422BB5844F00654E2C /* Models */,
@@ -100,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				9E20AA432BB5848400654E2C /* TabItem.swift */,
-				9E20AA452BB5856800654E2C /* HomeStack.swift */,
-				9E20AA472BB5866500654E2C /* FavoritesStack.swift */,
-				9E20AA492BB586D000654E2C /* SettingsStack.swift */,
+				9E20AA452BB5856800654E2C /* HomeItem.swift */,
+				9E20AA472BB5866500654E2C /* FavoritesItem.swift */,
+				9E20AA492BB586D000654E2C /* SettingsItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,13 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E20AA482BB5866500654E2C /* FavoritesStack.swift in Sources */,
+				9E20AA482BB5866500654E2C /* FavoritesItem.swift in Sources */,
 				9E20AA522BB5884600654E2C /* SettingsView.swift in Sources */,
-				9E20AA4A2BB586D000654E2C /* SettingsStack.swift in Sources */,
+				9E20AA4A2BB586D000654E2C /* SettingsItem.swift in Sources */,
 				9E20AA562BB5885100654E2C /* HomeView.swift in Sources */,
 				9E20AA362BB5810F00654E2C /* ContentView.swift in Sources */,
 				9E20AA4D2BB5875A00654E2C /* ApplicationData.swift in Sources */,
-				9E20AA462BB5856800654E2C /* HomeStack.swift in Sources */,
+				9E20AA462BB5856800654E2C /* HomeItem.swift in Sources */,
 				9E20AA342BB5810F00654E2C /* DeepLinkApp.swift in Sources */,
 				9E20AA442BB5848400654E2C /* TabItem.swift in Sources */,
 				9E20AA542BB5884C00654E2C /* FavoritesView.swift in Sources */,
@@ -355,6 +357,7 @@
 				DEVELOPMENT_TEAM = 4DQM269FVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +387,7 @@
 				DEVELOPMENT_TEAM = 4DQM269FVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

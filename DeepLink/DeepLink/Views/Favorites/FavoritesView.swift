@@ -14,15 +14,15 @@ struct FavoritesView: View {
     
     // MARK: - Body
     var body: some View {
-        NavigationStack(path: $applicationData.favoritesStack) {
+        NavigationStack(path: $applicationData.favoritesPath) {
             List {
-                ForEach(FavoritesStack.allCases, id: \.rawValue) { item in
+                ForEach(FavoritesItem.allCases, id: \.rawValue) { item in
                     NavigationLink(value: item) {
                         Text(item.name)
                     }
                 }
             }
-            .navigationDestination(for: FavoritesStack.self) { item in
+            .navigationDestination(for: FavoritesItem.self) { item in
                 Text(item.name)
             }
             .navigationTitle("Favorites")

@@ -14,15 +14,15 @@ struct HomeView: View {
     
     // MARK: - Body
     var body: some View {
-        NavigationStack(path: $applicationData.homeStack) {
+        NavigationStack(path: $applicationData.homePath) {
             List {
-                ForEach(HomeStack.allCases, id: \.rawValue) { item in
+                ForEach(HomeItem.allCases, id: \.rawValue) { item in
                     NavigationLink(value: item) {
                         Text(item.name)
                     }
                 }
             }
-            .navigationDestination(for: HomeStack.self) { item in
+            .navigationDestination(for: HomeItem.self) { item in
                 Text(item.name)
             }
             .navigationTitle("Home")

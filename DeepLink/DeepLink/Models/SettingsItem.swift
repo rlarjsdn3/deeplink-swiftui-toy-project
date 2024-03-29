@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SettingsStack: String, CaseIterable {
+enum SettingsItem: String, CaseIterable {
     case myProfile
     case privacyPolicy
     
@@ -21,7 +21,7 @@ enum SettingsStack: String, CaseIterable {
     }
 }
 
-extension SettingsStack {
+extension SettingsItem {
     static func convert(from string: String) -> Self? {
         return self.allCases.first { item in
             item.rawValue.lowercased() == string.lowercased()
